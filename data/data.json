@@ -1,0 +1,68 @@
+[
+    {
+        "id": "0",
+        "productName": "You Don't Know JS",
+        "image": "you-dont-know-js.jpg",
+        "rating": "4.54 (1,745 ratings)",
+        "shipping": "FREE SHIPPING",
+        "year": "published in 2015",
+        "author": "Kyle Simpson",
+        "price": "29,99",
+        "description": "It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the You dont know JS book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid."
+    },
+    {
+        "id": "1",
+        "productName": "JS Design Patterns",
+        "image": "javascript-design-patterns.jpg",
+        "rating": "3.84 (402 ratings)",
+        "shipping": "FREE SHIPPING",
+        "year": "published in 2017",
+        "author": "Addy Osmani",
+        "price": "24,99",
+        "description": "With Learning JavaScript Design Patterns, you’ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you."
+    },
+    {
+        "id": "2",
+        "productName": "Fullstack React Native",
+        "image": "fullstack-react.jpg",
+        "rating": "4.00 (34 ratings)",
+        "shipping": "FREE SHIPPING",
+        "year": "published in 2013",
+        "author": "Houssein Djirdeh",
+        "price": "39,99",
+        "description": "Master React Native with Fullstack React NativeThe up-to-date, in-depth, complete guide to React Native. Create beautiful mobile apps with JavaScript and React. Deliver high quality mobile apps, at light speed. Building the same app in both Swift and Java is time-consuming. With React Native, you can release a native app on both iOS and Android from a single codebase. Do you or your team already know JavaScript? Leverage your existing knowledge to build world class mobile applications."
+    },
+    {
+        "id": "3",
+        "productName": "Webgl Programming Guide",
+        "image": "real-time-3d-webgl.jpg",
+        "rating": "4.80 (9 ratings)",
+        "shipping": "FREE SHIPPING",
+        "year": "published in 2018",
+        "author": "Farhad Ghayour,  Diego Cantor",
+        "price": "34,99",
+        "description": "Create visually stunning, high-performance 3D applications for the web with WebGL 2 A complete course on 3D computer graphics: rendering, 3D math, lighting, cameras, and more Unlock a variety of new and advanced features offered in WebGL 2 As highly interactive applications have become an increasingly important part of the user experience, WebGL is a unique and cutting-edge technology that brings hardware-accelerated 3D graphics to the web. "
+    },
+    {
+        "id": "4",
+        "productName": "Eloquent JavaScript",
+        "image": "eloquent-javascript.jpg",
+        "rating": "4.21 (1,857 ratings)",
+        "shipping": "FREE SHIPPING",
+        "year": "published in 2018",
+        "author": "Marijn Haverbeke",
+        "price": "29,99",
+        "description": "Eloquent JavaScript dives into the JavaScript language to show programmers how to write elegant, effective JavaScript code. Like any good programming book, Eloquent JavaScript begins with fundamentals--variables, control structures, functions, and data structures--then moves on to complex topics like object-oriented programming and regular expressions. This third edition introduces new features covering the 2017 version of JavaScript, such as class notation, arrow functions, iterators, async functions, template strings, and black scope. Author Marijn Haverbeke keeps the friendly tone and easy-to-follow explanations that made the original a hit, and he adds new exercises for readers to test their skills. Eloquent JavaScript will have readers fluent in the language of the web in no time, eloquently."
+    },
+    {
+        "id": "5",
+        "productName": "JS: The Good Parts",
+        "image": "javascript-good-parts.jpg",
+        "rating": "4.23 (7,343 ratings)",
+        "shipping": "FREE SHIPPING",
+        "year": "published in 2008",
+        "author": "Douglas Crockford",
+        "price": "19,99",
+        "description": "Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that's more reliable, readable, and maintainable than the language as a whole—a subset you can use to create truly extensible and efficient code."
+    }
+]

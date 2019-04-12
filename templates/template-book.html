@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Nunito+Sans" rel="stylesheet">
+
+    <title>{%PRODUCTNAME%}</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 6rem 4rem 10rem;
+            line-height: 1.7;
+            font-family: "Nunito Sans", sans-serif;
+            color: #555;
+            min-height: 100vh;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        }
+
+        h1 {
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-size: 6rem;
+            color: white;
+            text-shadow: 2px 2px 2px #493030;
+            transform: skewY(-3deg);
+            margin-bottom: 6rem;
+            text-align: center;
+            position: relative;
+            word-spacing: 3px;
+        }
+
+        .container {
+            width: 110rem;
+            margin: 0 auto;
+        }
+
+        .book {
+            width: 70rem;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        .book__hero {
+            position: relative;
+        }
+
+        .book__hero::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+            opacity: .4;
+        }
+
+        .book__img {
+            width: 100%;
+            display: block;
+        }
+
+        .book__price {
+            position: absolute;
+            top: -3rem;
+            right: -3rem;
+            z-index: 100;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+            text-shadow: 3px 3px 4px #493030;
+            height: 14rem;
+            width: 14rem;
+            border: 6px solid white;
+            border-radius: 50%;
+            transform: rotate(15deg);
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+            color: white;
+            font-size: 3rem;
+            font-family: "Bungee Inline", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .book__back:link,
+        .book__back:visited {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            z-index: 1;
+            border: 2px solid white;
+            border-radius: 100rem;
+            padding: 0 2rem;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .book__back:hover,
+        .book__back:active {
+            background-color: white;
+            color: #555;
+        }
+
+        .book__name {
+            background: linear-gradient(to right, #a18cd1, #6f4dbc);
+            padding: 1.75rem 1rem;
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-size: 3.25rem;
+            color: white;
+            text-align: center;
+            word-spacing: 2px;
+        }
+
+        .book__details {
+            background-color: #eee;
+            padding: 4rem 6rem;
+            font-size: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.75rem;
+        }
+
+        .book__description {
+            padding: 5rem 6rem;
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+
+        .book__link:link,
+        .book__link:visited {
+            display: block;
+            background-color: #6f4dbc;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+
+        .book__link:hover,
+        .book__link:active {
+            background-color: #a18cd1;
+        }
+
+        .book__source {
+            padding: 0 6rem 3rem;
+            color: #999;
+            font-size: 1.2rem;
+        }
+
+        .book__source a:link,
+        .book__source a:visited {
+            color: #999;
+        }
+
+        .book__source a:hover,
+        .book__source a:active {
+            color: #555;
+        }
+
+        .emoji-left {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .emoji-right {
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book Store 📚</h1>
+        <figure class="book">
+            <p class="book__price">${%PRICE%}</p>
+            <a href="/products" class="book__back"><span class="emoji-left">👈</span>Back</a>
+            <div class="book__hero">
+                <img src="/{%IMAGE%}" alt="{%PRODUCTNAME%}" class="book__img">
+            </div>
+            <h2 class="book__name">{%PRODUCTNAME%}</h2>
+            <div class="book__details">
+                <p><span class="emoji-left">📝</span>{%AUTHOR%}</p>
+                <p><span class="emoji-left">⭐️</span>{%RATING%}</p>
+                <p><span class="emoji-left">⌛️</span>{%YEAR%}</p>
+                <p><span class="emoji-left">📦</span>{%SHIPPING%}</p>
+            </div>
+            <p class="book__description">{%DESCRIPTION%}</p>
+            
+            <a href="#" class="book__link">Buy now for ${%PRICE%} <span class="emoji-right">😍</span></a>
+        </figure>
+    </div>
+</body>
+
+</html>
