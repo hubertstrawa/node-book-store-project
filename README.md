@@ -1,2 +1,4 @@
 # node-book-store-project
-Simple book store project generating pages on the fly with Node.JS
+Small book store project generating pages on the fly with Node.JS
+
+![Mockup](https://i.imgur.com/W2GJ74S.jpg)
